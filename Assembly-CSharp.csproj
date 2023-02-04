@@ -53,9 +53,14 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Roots\Scripts\SnakeController.cs" />
+    <Compile Include="Assets\_Roots\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\HealthHeartSystem\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarController.cs" />
+    <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarHUDTester.cs" />
+    <Compile Include="Assets\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\HealthHeartSystem\readme.txt" />
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
   </ItemGroup>
   <ItemGroup>
