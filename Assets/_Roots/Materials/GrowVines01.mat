@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GrowVines01
-  m_Shader: {fileID: -6465566751694194690, guid: 8be0451cca8f9164282a397e9cc364e3,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 8be0451cca8f9164282a397e9cc364e3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -48,8 +47,6 @@ Material:
     - Vector1_c68134628d8e47e0bd01c752ae710afc: -2.5
     - Vector1_e59415717e614751a15f720ab2a18082: 0.2
     m_Colors:
-    - Color_bacd9c6efe5e42cf98cdd3beb2943768: {r: 0.51641494, g: 0.7075472, b: 0.41051087,
-        a: 1}
-    - Color_f2dee552c233424ea54b9e3827c1b2c0: {r: 0.42452824, g: 0.42452824, b: 0.42452824,
-        a: 1}
+    - Color_bacd9c6efe5e42cf98cdd3beb2943768: {r: 0.6415094, g: 0.35023963, b: 0.251157, a: 1}
+    - Color_f2dee552c233424ea54b9e3827c1b2c0: {r: 0.42452824, g: 0.42452824, b: 0.42452824, a: 1}
   m_BuildTextureStacks: []
