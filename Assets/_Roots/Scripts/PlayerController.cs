@@ -28,8 +28,8 @@ public class PlayerController : MonoBehaviour
     private float posYEnd = 0;
     private float dyingDuration = 1;
 
-    private float minFloorRange = -3000;
-    private float maxFloorRange = 3000;
+    private float minFloorRange = -2000;
+    private float maxFloorRange = 2000;
 
     private void Awake()
     {
