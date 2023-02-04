@@ -21,15 +21,15 @@ public class PlayerController : MonoBehaviour
 
     private PlayerStats playerStats;
 
-    private Coroutine dyingCoroutine;
+    private Coroutine dyingCoroutine, spawningCoroutine;
     private float damage = 1;
     private bool playerIsAlive = true;
     private float posYStart = 6;
-    private float posYEnd = 3;
+    private float posYEnd = 0;
     private float dyingDuration = 1;
 
-    private float xMinRange = -3000;
-    private float xMaxRange = 3000;
+    private float minFloorRange = -3000;
+    private float maxFloorRange = 3000;
 
     private void Awake()
     {
@@ -93,31 +93,35 @@ public class PlayerController : MonoBehaviour
     private void LoseLife()
     {
         Debug.Log("You hit a rock ... lost 1 life");
-        // show you lost life text and UI
-        // show dead root
+        //TODO:  show you lost life text and UI
+
+
+
         //if you have extra roots growing then respawn to another .... if you dont then show GAME OVER
-
-        if (dyingCoroutine != null)
-        {
-            StopCoroutine(dyingCoroutine);
-        }
-        dyingCoroutine = StartCoroutine(DyingRoot());
-
 
         if (playerStats.Health > 0)
         {
             playerStats.TakeDamage(damage);// minus life 
-            Respawn();
+            if (dyingCoroutine != null)
+            {
+                StopCoroutine(dyingCoroutine);
+            }
+            dyingCoroutine = StartCoroutine(DyingRoot(true));  // killing the root
         }
         else
         {
+            if (dyingCoroutine != null)
+            {
+                StopCoroutine(dyingCoroutine);
+            }
+            dyingCoroutine = StartCoroutine(DyingRoot(false));  // killing the root
+
             //YOU ARE DEAD GAME OVER
             GameManager.Instance.GameOver();
         }
-
     }
 
-    private IEnumerator DyingRoot()
+    private IEnumerator DyingRoot(bool respawnStatus)
     {
         float progress = 0;
         while (progress < 1f)
@@ -126,15 +130,32 @@ public class PlayerController : MonoBehaviour
             progress += Time.deltaTime / dyingDuration;
             transform.position = new Vector3(transform.position.x, Mathf.Lerp(posYStart, posYEnd, progress), transform.position.z);
         }
-        transform.position = new Vector3(Random.Range(xMinRange, xMaxRange), transform.position.y, transform.position.z);
-        playerIsAlive = true;
+
+        if (respawnStatus) Respawn();
     }
 
     private void Respawn()
     {
-        //cam down
-        //get one of the random remaining roots
-        //switch cam to the selected root
-        //
+        //TODO cam down
+
+        if (spawningCoroutine != null)
+        {
+            StopCoroutine(spawningCoroutine);
+        }
+        spawningCoroutine = StartCoroutine(SpawningRoot());
+
+        transform.position = new Vector3(Random.Range(minFloorRange, maxFloorRange), transform.position.y, Random.Range(minFloorRange, maxFloorRange));
+        playerIsAlive = true;
+    }
+
+    private IEnumerator SpawningRoot()
+    {
+        float progress = 0;
+        while (progress < 1f)
+        {
+            yield return null;
+            progress += Time.deltaTime / dyingDuration;
+            transform.position = new Vector3(transform.position.x, Mathf.Lerp(posYEnd, posYStart, progress), transform.position.z);
+        }
     }
 }

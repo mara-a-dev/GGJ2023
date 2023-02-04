@@ -20,8 +20,9 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        //TODO : Show UI that PLAYER IS DEAD
         ResetGame();
-        //go to main screen
+        //TODO : go to main screen
     }
     public void ResetGame()
     {
