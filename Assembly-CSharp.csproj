@@ -53,14 +53,19 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\_Roots\Scripts\PlayerController.cs" />
     <Compile Include="Assets\HealthHeartSystem\Scripts\PlayerStats.cs" />
-    <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarController.cs" />
     <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarHUDTester.cs" />
-    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
+    <None Include="Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
     <None Include="Assets\HealthHeartSystem\readme.txt" />
+    <None Include="Assets\greyRoadStudio\LowPolyTreePack\readme.txt" />
     <None Include="Assets\BrokenVector\LowPolyTreePack\README.txt" />
   </ItemGroup>
   <ItemGroup>
