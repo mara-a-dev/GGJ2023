@@ -59,6 +59,7 @@
     <Compile Include="Assets\_Roots\Scripts\PlayerController.cs" />
     <Compile Include="Assets\HealthHeartSystem\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarHUDTester.cs" />
+    <Compile Include="Assets\GabrielAguiarProductions\Scripts\GrowVinesScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />

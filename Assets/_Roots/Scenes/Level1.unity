@@ -1889,6 +1889,68 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5800114, y: 1.0755777, z: 1.2280451}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &321572979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7716780416754810236}
+    m_Modifications:
+    - target: {fileID: 8077488242663666335, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_Name
+      value: Vines01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.89373
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999524
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.009764928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.119
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+--- !u!4 &321572980 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8886394186692880421, guid: a5691fbed45640849b5fa785025d8d1e, type: 3}
+  m_PrefabInstance: {fileID: 321572979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &384144732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9658,7 +9720,7 @@ Transform:
   m_LocalScale: {x: 0.29833615, y: 0.22216891, z: 0.6640205}
   m_Children: []
   m_Father: {fileID: 7716780416754810236}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
 --- !u!4 &2910310009722202174
 Transform:
@@ -9934,7 +9996,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 6.6817}
   m_Children: []
   m_Father: {fileID: 7716780416754810236}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 21.725, y: 0, z: 0}
 --- !u!81 &7081048600855864210
 AudioListener:
@@ -10125,7 +10187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7716780416754810236}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7716780416754810236
 Transform:
@@ -10138,6 +10200,7 @@ Transform:
   m_LocalPosition: {x: 81.2, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 321572980}
   - {fileID: 7666772584690310998}
   - {fileID: 2848397250194686633}
   - {fileID: 8143492079441664980}
@@ -10157,7 +10220,7 @@ Transform:
   m_LocalScale: {x: 0.29833615, y: 0.22216891, z: 0.6640205}
   m_Children: []
   m_Father: {fileID: 7716780416754810236}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!23 &8714859215104257545
 MeshRenderer:
